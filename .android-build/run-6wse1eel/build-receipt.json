@@ -1,0 +1,9 @@
+{
+  "apk": "C:\\Users\\prora\\Documents\\kimi\\tasks\\2026-10-20\\21-09-25-fd0cfefa\\abik\\.android-build\\run-6wse1eel\\app-debug.apk",
+  "source_apk": "C:\\Users\\prora\\Documents\\kimi\\tasks\\2026-10-20\\21-09-25-fd0cfefa\\abik\\app\\build\\outputs\\apk\\debug\\app-debug.apk",
+  "package": "info.prorabka.abik.debug",
+  "task": ":app:assembleDebug",
+  "build_log": "C:\\Users\\prora\\Documents\\kimi\\tasks\\2026-10-20\\21-09-25-fd0cfefa\\abik\\.android-build\\run-6wse1eel\\build.log",
+  "sha256": "336af5148a016085484af061af1e972e67ab4446689b4f5f0457dc8067130a6d",
+  "rendering": "unverified"
+}

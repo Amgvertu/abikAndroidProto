@@ -1,0 +1,81 @@
+Downloading https://services.gradle.org/distributions/gradle-8.11.1-bin.zip
+.............10%.............20%.............30%.............40%.............50%.............60%.............70%.............80%.............90%.............100%
+
+Welcome to Gradle 8.11.1!
+
+Here are the highlights of this release:
+ - Parallel load and store for Configuration Cache
+ - Java compilation errors at the end of the build output
+ - Consolidated report for warnings and deprecations
+
+For more details see https://docs.gradle.org/8.11.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.11.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:checkDebugAarMetadata
+> Task :app:generateDebugResValues
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests
+> Task :app:extractDeepLinksDebug
+> Task :app:parseDebugLocalResources
+> Task :app:processDebugMainManifest
+> Task :app:processDebugManifest
+> Task :app:javaPreCompileDebug
+> Task :app:mergeDebugShaders
+> Task :app:compileDebugShaders NO-SOURCE
+> Task :app:generateDebugAssets UP-TO-DATE
+> Task :app:mergeDebugAssets
+> Task :app:compressDebugAssets
+> Task :app:desugarDebugFileDependencies
+> Task :app:mergeDebugResources
+> Task :app:mergeDebugJniLibFolders
+> Task :app:checkDebugDuplicateClasses
+> Task :app:mergeDebugNativeLibs
+> Task :app:processDebugManifestForPackage
+> Task :app:mergeExtDexDebug
+> Task :app:mergeLibDexDebug
+> Task :app:validateSigningDebug
+> Task :app:writeDebugAppMetadata
+
+> Task :app:stripDebugDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so.
+
+> Task :app:writeDebugSigningConfigVersions
+> Task :app:processDebugResources
+
+> Task :app:compileDebugKotlin
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/MainActivity.kt:118:2 Unresolved reference 'Composable'.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/MainActivity.kt:119:13 Functions which invoke @Composable functions must be marked with the @Composable annotation
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/MainActivity.kt:119:53 @Composable invocations can only happen from the context of a @Composable function
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/data/MockData.kt:26:5 Primary constructor of data class must only have property ('val' / 'var') parameters.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/data/MockData.kt:47:5 Primary constructor of data class must only have property ('val' / 'var') parameters.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/data/MockData.kt:49:5 Primary constructor of data class must only have property ('val' / 'var') parameters.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/ui/screens/FinanceScreens.kt:164:13 This material API is experimental and is likely to change or to be removed in the future.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/ui/screens/FinanceScreens.kt:167:68 This material API is experimental and is likely to change or to be removed in the future.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/ui/screens/FinanceScreens.kt:167:96 This material API is experimental and is likely to change or to be removed in the future.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/ui/screens/FinanceScreens.kt:168:56 This material API is experimental and is likely to change or to be removed in the future.
+e: file:///C:/Users/prora/Documents/kimi/tasks/2026-10-20/21-09-25-fd0cfefa/abik/app/src/main/java/info/prorabka/abik/ui/screens/FinanceScreens.kt:170:17 This material API is experimental and is likely to change or to be removed in the future.
+
+> Task :app:compileDebugKotlin FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugKotlin'.
+> A failure occurred while executing org.jetbrains.kotlin.compilerRunner.GradleCompilerRunnerWithWorkers$GradleKotlinCompilerWorkAction
+   > Compilation error. See log for more details
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 2m 11s
+28 actionable tasks: 28 executed
